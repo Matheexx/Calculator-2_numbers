@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator - 2 numbers</title>
+</head>
+<body>
+    <header>
+        <h1>Calculator - 2 numbers</h1>
+    </header>
+    <main>
+        <div id="calculator">
+            <form>
+                <div id="text-boxes">
+                    <input type="number" name="input_n1" id="input_n1" class="inputs">
+                    <div id="operation">
+                        <p></p>
+                    </div>
+                    <input type="number" name="input_n2" id="input_n2" class="inputs">
+                </div>
+                <div id="buttons">
+                    <div id="operators">
+                        <input type="button" value="+" onclick="btn_adição()" class="operator" id="button_adição">
+                        <input type="button" value="-" onclick="btn_subtração()" class="operator" id="button_subtração">
+                        <input type="button" value="x" onclick="btn_multiplicação()" class="operator" id="button_multiplicação">
+                        <input type="button" value="÷" onclick="btn_divisão()" class="operator" id="button_divisão">
+                    </div>
+                    <input type="button" value="Clear" onclick="f_clear()" id="button_limpar">
+                </div>
+            </form>
+            <div id="result">
+                <p></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Matheexx &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
