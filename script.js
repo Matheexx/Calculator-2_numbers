@@ -17,7 +17,6 @@ function verifyValues(txt_n1, txt_n2) {
     if (txt_n1.length && txt_n2.length) return true;
     alert("[ERROR] Type two values");
     clear_result_operation_borders();
-
 }
 
 
