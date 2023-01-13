@@ -16,6 +16,8 @@ const result = document.getElementById("result");
 function verifyValues(txt_n1, txt_n2) {
     if (txt_n1.length && txt_n2.length) return true;
     alert("[ERROR] Type two values");
+    clear_result_operation_borders();
+
 }
 
 
@@ -85,6 +87,10 @@ function btn_divisão() {
 function f_clear() {
     input_n1.value = "";
     input_n2.value = "";
+    clear_result_operation_borders();
+}
+
+function clear_result_operation_borders() {
     result.innerHTML = "";
     operation.innerHTML = "";
 
