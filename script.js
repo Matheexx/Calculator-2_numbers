@@ -14,7 +14,7 @@ const result = document.getElementById("result");
 
 // Definição da função para verificar se os valores foram digitados:
 function verifyValues(txt_n1, txt_n2) {
-    if (!(txt_n1.length == 0 || txt_n2.length == 0)) return true;
+    if (txt_n1.length && txt_n2.length) return true;
     alert("[ERROR] Type two values");
 }
 
